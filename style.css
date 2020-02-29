@@ -1,0 +1,205 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: url("./parkering.jpg");
+    background-size: cover;
+}
+
+.form-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 350px;
+    padding: 100xp;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 50px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.form-box h1 {
+    margin: 0 0 25px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-style: oblique;
+}
+
+.form-box .hr1 {
+    position: relative;
+    top: -8%;
+}
+
+.form-box .hr2 {
+    position: relative;
+    top: -5%;
+}
+
+form-box .engetimb {
+    position: relative;
+    top: -5%;
+    left: 5%;
+    margin-bottom: -25px;
+}
+
+.form-box .labelbs .labelbörjan {
+    position: relative;
+    left: 18%;
+    top: -50px;
+}
+
+.form-box .labelbs .labelslut {
+    position: relative;
+    left: 38%;
+    top: -50px
+}
+
+.form-box .engetidbs .engetimt {
+    position: relative;
+    left: 12%;
+    top: -160px;
+}
+
+.form-box .engetidbs .engemint {
+    position: relative;
+    left: 20.5%;
+    top: -160px;
+}
+
+.form-box .hr2 {
+    position: relative;
+    top: -80px;
+}
+
+.form-box .engetidbs .engetimt {
+    padding: 1px 0px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    width: 80px;
+    height: 50px;
+}
+
+.form-box .engetidbs .engemint {
+    padding: 1px 0px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    width: 80px;
+    height: 50px;
+}
+
+.form-box .labelbs .labelbörjan {
+    padding: 5px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    pointer-events: none;
+    transition: 03s;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.form-box .labelbs .labelslut {
+    padding: 5px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    pointer-events: none;
+    transition: 03s;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.form-box .engedate1 {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    top: -60px;
+    left: 90px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+
+.form-box .engedate2 {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    top: -110px;
+    left: 300px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+
+.form-box .engedate1 .row .col6 .form-group .form-control {
+    background-color: transparent;
+    font-size: 24px;
+}
+
+.form-box .engedate2 .row .col6 .form-group .form-control {
+    background-color: transparent;
+    font-size: 24px;
+}
+
+.form-box .rr {
+    position: relative;
+    top: -170px;
+    left: 60px;
+}
+
+.form-box .btnräkna {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    background: #03a9f4;
+    height: 40px;
+}
+
+.form-box .resultat {
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #fff;
+    margin: 0px 20px 10px 25px;
+}
+
+.form-box .hr3 {
+    position: relative;
+    top: -190px;
+}
+
+.form-box .fromhour {
+    width: 10px;
+}
+
+.form-box .alla {
+    position: relative;
+    top: -210px;
+    left: 20px;
+    color: #fff;
+}
+
+.form-box .alla .information {
+    color: aqua;
+}

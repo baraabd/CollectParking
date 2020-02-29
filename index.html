@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMS-PARK</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h1>Räkna parkering</h1>
+        <hr class="hr1">
+
+        <div class="labelbs">
+            <label class="labelbörjan">Börja tid:</label>
+            <label class="labelslut">Sluta tid:</label>
+        </div>
+
+
+        <div class="engedate1">
+            <div class="row">
+                <div class="row">
+                    <div class="col6">
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group date" id='datepickerb'>
+                                    <input type='text' class="form-control" id="db" />
+                                    <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="engedate2">
+            <div class="row">
+                <div class="row">
+                    <div class="col6">
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group date" id='datepickers'>
+                                    <input type='text' class="form-control" id="ds" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr2">
+
+        <div class="engetidbs">
+            <input class="engetimt" id="timb" type="number" placeholder="Tim" name="Tim" min="0" max="24">
+            <input class="engetimt" id="minb" type="number" placeholder="Min" name="Min" min="1" max="59">
+            <input class="engemint" id="tims" type="number" placeholder="Tim" name="Tim" min="0" max="24">
+            <input class="engemint" id="mins" type="number" placeholder="Min" name="Min" min="1" max="59">
+        </div>
+
+
+
+
+        <div class="rr">
+
+            <button onclick="calculte" class="btnräkna" type="submit" id="myBtn">Räkna</button>
+
+            <label class="resultat" id="resultat">00,00 kr </label>
+        </div>
+
+
+        <hr class="hr3">
+
+        <p class="alla">
+            <span class="information">Taxan för widgeten:</span><br> Alla dagar <span id="fromhour">09:00</span>- <span id="tillhour">18:00 </span> <span id="hourprice">5 kr</span> / tim<br> Övrig tid: <span id="othertime">0</span> kr / tim<br> Max pris
+            per dygn:
+            <spin id="maxprice">25</spin> kr<br> Första timmen om inte övrig tid:<span id="firsthour">12</span>kr<br>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(function() {
+            $('#datepickerb').datepicker({
+                format: "dd/mm/yyyy",
+                autoclose: true,
+                todayHighlight: true,
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                orientation: "button"
+            });
+        });
+
+
+        $(function() {
+            $('#datepickers').datepicker({
+                format: "dd/mm/yyyy",
+                autoclose: true,
+                todayHighlight: true,
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                autoclose: true,
+                changeMonth: true,
+                changeYear: true,
+                orientation: "button"
+            });
+        });
+    </script>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+
+    <p id="ss"></p>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
